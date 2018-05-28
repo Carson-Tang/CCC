@@ -2,9 +2,7 @@ package CCC;
 import java.io.*;
 import java.util.*;
 /*
- * 
-CCC '00 J5 - Surfing
-
+ * CCC '00 J5 - Surfing
  * Carson Tang
  */
 public class CCC_00_J5 {
