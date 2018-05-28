@@ -5,7 +5,7 @@ import java.util.*;
  * CCC '07 J1 - Who is in the Middle?
  * Carson Tang
  */
-public class CCC_07_01 {
+public class CCC_07_J1 {
     public static void main(String[] args) throws IOException {
         BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Integer> x = new ArrayList<>();
