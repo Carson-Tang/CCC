@@ -7,12 +7,12 @@ import java.util.*;
  */
 public class CCC_15_S1 {
     public static void main(String[] args) throws IOException {
-        BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(sc.readLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
         long sum =0;
         ArrayList<Integer> x = new ArrayList<>();
         for(int i = 0; i < n; i++) {
-            int k = Integer.parseInt(sc.readLine());
+            int k = Integer.parseInt(br.readLine());
             if(k==0) {
                 x.remove(x.size()-1);
             } else {
