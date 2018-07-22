@@ -2,7 +2,7 @@ package CCC;
 import java.io.*;
 import java.util.*;
 /*
- * CCC '15 S3 - Snow Calls
+ * CCC '15 S3 - Gates
  * Carson Tang
  */
 public class CCC_15_S3 {
