@@ -2,10 +2,10 @@ package CCC;
 import java.io.*;
 import java.util.*;
 /*
- * CCC '15 S3 - Gates
+ * CCC '07 J5 - Keep on Truckin'
  * Carson Tang
  */
-public class CCC_15_S3 {
+public class CCC_07_J5 {
     public static int c =0;
     public static void main(String [] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
