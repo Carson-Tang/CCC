@@ -2,7 +2,7 @@ package CCC;
 import java.io.*;
 import java.util.*;
 /*
- * CCC '09 S4 - Signage
+ * CCC '09 J4 - Signage
  * Carson Tang
  */
 public class CCC_09_J4 {
