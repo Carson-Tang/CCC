@@ -41,13 +41,12 @@ public class CCO_11_P2 {
         int [][] dis = new int[n][s+1];
         for(int [] a : dis) Arrays.fill(a,999999);
         q.add(new edge(0,0,s));
-        int light;
         while(!q.isEmpty()){
             edge a = q.poll();
             int cur = a.dest;
             for(edge b : x[cur]){
                 int len = a.dis + b.dis;
-                light = a.suntime - b.suntime;
+                int light = a.suntime - b.suntime;
                 if(light<0) continue;
                 int f = b.dest;
                 if(dis[f][light]>len){
