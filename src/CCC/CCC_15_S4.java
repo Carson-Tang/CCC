@@ -35,26 +35,22 @@ public class CCC_15_S4 {
         int start = Integer.parseInt(tok2[0]), end = Integer.parseInt(tok2[1]);
         int [][] dis = new int[n+1][k+1];
         for(int [] a : dis) Arrays.fill(a,9999999);
-        boolean [] vis = new boolean[n+1];
-        vis[start]=true;
-        dis[start][0]=0;
         PriorityQueue<edge> q = new PriorityQueue<>();
-        q.add(new edge(start,0,0));
+        q.add(new edge(start,0,k));
         while(!q.isEmpty()){
             edge a = q.poll();
             int e = a.dest;
-            vis[e]=false;
-            for(int i = 0; i < x[e].size(); i++){
-                for(int j = 0; j < k - x[e].get(i).hull; j++){
-                    if(dis[x[e].get(i).dest][j+x[e].get(i).hull]>dis[e][j] + x[e].get(i).time){
-                        dis[x[e].get(i).dest][j+x[e].get(i).hull]=dis[e][j] + x[e].get(i).time;
-                        if(!vis[x[e].get(i).dest]) {
-                            q.add(new edge(x[e].get(i).dest, x[e].get(i).time, x[e].get(i).hull));
-                            vis[x[e].get(i).dest]=true;
-                        }
-                    }
+            for(edge b : x[e]){
+                int time = a.time + b.time;
+                int hull = a.hull - b.hull;
+                if(hull<1) continue;
+                int f = b.dest;
+                if(dis[f][hull]>time){
+                    dis[f][hull]=time;
+                    q.add(new edge(f,time,hull));
                 }
             }
+            if(e==end) q.clear();
         }
         int min = 9999999;
         for(int i = 0; i < k+1; i++){
