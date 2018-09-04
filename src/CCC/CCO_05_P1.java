@@ -20,8 +20,8 @@ public class CCO_05_P1 {
         }
         int [] valid = new int[3];
         for(int i = 0; i < 10; i++){
-            for(int k = 0; k < 10; k++){
-                for(int j = 0; j < 10; j++){
+            for(int k = i; k < 10; k++){
+                for(int j = k; j < 10; j++){
                     valid[0]=i;
                     valid[1]=k;
                     valid[2]=j;
