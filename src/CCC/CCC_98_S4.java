@@ -8,7 +8,7 @@ import java.util.*;
  * Carson Tang
  */
 
-public class CCO_98_S4 {
+public class CCC_98_S4 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int q = Integer.parseInt(br.readLine());
