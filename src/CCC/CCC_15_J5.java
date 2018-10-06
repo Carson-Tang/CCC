@@ -17,15 +17,6 @@ public class CCC_15_J5 {
         } else {
             System.out.println(recur(1,n,k));
         }
-        for(int i = 0; i < n/k+1; i++){
-            for(int j = 0; j < n+1; j++){
-                for(int c = 0; c < k+1; c++){
-                    System.out.print(dp[i][j][c]);
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
     }
     public static int recur (int min, int n, int k){
         if(n==0&&k==0) return 1;
