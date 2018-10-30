@@ -1,2 +1,2 @@
 # CCC
-CCC/CCCHK/CCO/IOI questions in Java
+CCC/CCCHK/CCO/IOI questions in Java/C++
