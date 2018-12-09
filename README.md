@@ -1,4 +1,4 @@
 # DMOJ
-CCC/CCCHK/CCO/MockCCO/IOI questions in Java/C++
+My solutions to CCC/CCCHK/CCO/MockCCO/IOI on DMOJ in Java/C++
 
-Warning : Some of the solutions to the easier problems have some overkill code from when I first began programming 
+Warning : Some solutions are overkill from when I first began programming 
