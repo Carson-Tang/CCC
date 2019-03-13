@@ -63,9 +63,8 @@ int main(){
     cin.sync_with_stdio(0);
     cin.tie(0);
     cin>>t>>g;
-    vector<int>score(7);
+    vector<int>score(5);
     fill(score.begin(),score.end(),0);
-    for(int i = 1; i <= 4; i++) score[i]=0;
     for(int i = 0; i < g; i++){
         cin>>a>>b>>sa>>sb;
         if(sa>sb) score[a]+=3;
